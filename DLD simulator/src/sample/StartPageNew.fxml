@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.40" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.StartPageController">
+   <children>
+      <Label layoutX="189.0" layoutY="65.0" prefHeight="47.0" prefWidth="220.0" text="START PAGE" textFill="#4ee421">
+         <font>
+            <Font name="System Bold Italic" size="32.0" />
+         </font>
+      </Label>
+      <Button layoutX="137.0" layoutY="152.0" mnemonicParsing="false" onAction="#ActionSimulator" prefHeight="25.0" prefWidth="89.0" text="SIMULATOR" textFill="#1e2ad7" />
+      <Button layoutX="137.0" layoutY="209.0" mnemonicParsing="false" onAction="#ActionTable" text="TRUTH TABLE" textFill="#1111dd" />
+   </children>
+</AnchorPane>
