@@ -6,6 +6,7 @@ import javafx.fxml.FXML;
 import java.awt.*;
 import javafx.scene.control.TextField;
 import javafx.scene.control.MenuItem;
+
 public class TableController {
     private Main main ;
     @FXML

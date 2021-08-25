@@ -1,6 +1,6 @@
 package sample;
 
-import ServerPackage.CircuitLogicServer;
+import server.CircuitLogicServer;
 import util.NetworkUtil;
 
 import java.io.IOException;
