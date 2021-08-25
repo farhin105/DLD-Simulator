@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+
+<AnchorPane fx:id="anchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="475.0" prefWidth="756.0" xmlns="http://javafx.com/javafx/8.0.40" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.SimulatorController">
+   <children>
+      <MenuBar layoutY="-4.0" prefHeight="32.0" prefWidth="756.0">
+        <menus>
+          <Menu mnemonicParsing="false" text="File">
+            <items>
+              <MenuItem mnemonicParsing="false" text="Close" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Edit">
+            <items>
+              <MenuItem mnemonicParsing="false" onAction="#ActionDelete" text="DeleteGate" />
+                  <MenuItem mnemonicParsing="false" onAction="#ActionDeleteWire" text="DeleteWire" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Help">
+            <items>
+              <MenuItem mnemonicParsing="false" text="About" />
+            </items>
+          </Menu>
+        </menus>
+         <effect>
+            <ColorAdjust contrast="-0.38" hue="0.78" saturation="0.27" />
+         </effect>
+      </MenuBar>
+      <MenuBar layoutY="23.0" prefHeight="72.0" prefWidth="756.0">
+        <menus>
+          <Menu mnemonicParsing="false">
+            <items>
+              <MenuItem mnemonicParsing="false" text="Close" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false">
+            <items>
+              <MenuItem mnemonicParsing="false" text="Delete" />
+            </items>
+          </Menu>
+        </menus>
+         <effect>
+            <ColorAdjust contrast="-0.36" hue="0.61" saturation="0.15" />
+         </effect>
+      </MenuBar>
+      <ImageView fx:id="imageAnd" fitHeight="38.0" fitWidth="68.0" layoutX="98.0" layoutY="41.0" pickOnBounds="true" preserveRatio="true" />
+       <ImageView fx:id="imageAnd1" fitHeight="38.0" fitWidth="68.0" layoutX="98.0" layoutY="41.0" pickOnBounds="true" preserveRatio="true" />
+       <ImageView fx:id="imageAnd2" fitHeight="38.0" fitWidth="68.0" layoutX="98.0" layoutY="41.0" pickOnBounds="true" preserveRatio="true" />
+       <ImageView fx:id="imageAnd3" fitHeight="38.0" fitWidth="68.0" layoutX="98.0" layoutY="41.0" pickOnBounds="true" preserveRatio="true" />
+       <ImageView fx:id="imageAnd4" fitHeight="38.0" fitWidth="68.0" layoutX="98.0" layoutY="41.0" pickOnBounds="true" preserveRatio="true" />
+       <ImageView fx:id="imageAnd5" fitHeight="38.0" fitWidth="68.0" layoutX="98.0" layoutY="41.0" pickOnBounds="true" preserveRatio="true" />
+       <ImageView fx:id="imageAnd6" fitHeight="38.0" fitWidth="68.0" layoutX="98.0" layoutY="41.0" pickOnBounds="true" preserveRatio="true" />
+       <ImageView fx:id="imageAnd7" fitHeight="38.0" fitWidth="68.0" layoutX="98.0" layoutY="41.0" pickOnBounds="true" preserveRatio="true" />
+       <ImageView fx:id="imageAnd8" fitHeight="38.0" fitWidth="68.0" layoutX="98.0" layoutY="41.0" pickOnBounds="true" preserveRatio="true" />
+       <ImageView fx:id="imageAnd9" fitHeight="38.0" fitWidth="68.0" layoutX="98.0" layoutY="41.0" pickOnBounds="true" preserveRatio="true" />
+       <ImageView fx:id="imageAnd10" fitHeight="38.0" fitWidth="68.0" layoutX="98.0" layoutY="41.0" pickOnBounds="true" preserveRatio="true" />
+
+       <ImageView fx:id="imageOr" fitHeight="38.0" fitWidth="68.0" layoutX="180.0" layoutY="41.0" pickOnBounds="true" preserveRatio="true" />
+       <ImageView fx:id="imageOr1" fitHeight="38.0" fitWidth="68.0" layoutX="180.0" layoutY="41.0" pickOnBounds="true" preserveRatio="true" />
+       <ImageView fx:id="imageOr2" fitHeight="38.0" fitWidth="68.0" layoutX="180.0" layoutY="41.0" pickOnBounds="true" preserveRatio="true" />
+       <ImageView fx:id="imageOr3" fitHeight="38.0" fitWidth="68.0" layoutX="180.0" layoutY="41.0" pickOnBounds="true" preserveRatio="true" />
+       <ImageView fx:id="imageOr4" fitHeight="38.0" fitWidth="68.0" layoutX="180.0" layoutY="41.0" pickOnBounds="true" preserveRatio="true" />
+       <ImageView fx:id="imageOr5" fitHeight="38.0" fitWidth="68.0" layoutX="180.0" layoutY="41.0" pickOnBounds="true" preserveRatio="true" />
+       <ImageView fx:id="imageOr6" fitHeight="38.0" fitWidth="68.0" layoutX="180.0" layoutY="41.0" pickOnBounds="true" preserveRatio="true" />
+       <ImageView fx:id="imageOr7" fitHeight="38.0" fitWidth="68.0" layoutX="180.0" layoutY="41.0" pickOnBounds="true" preserveRatio="true" />
+       <ImageView fx:id="imageOr8" fitHeight="38.0" fitWidth="68.0" layoutX="180.0" layoutY="41.0" pickOnBounds="true" preserveRatio="true" />
+       <ImageView fx:id="imageOr9" fitHeight="38.0" fitWidth="68.0" layoutX="180.0" layoutY="41.0" pickOnBounds="true" preserveRatio="true" />
+       <ImageView fx:id="imageOr10" fitHeight="38.0" fitWidth="68.0" layoutX="180.0" layoutY="41.0" pickOnBounds="true" preserveRatio="true" />
+
+      <ImageView fx:id="imageNand" fitHeight="38.0" fitWidth="68.0" layoutX="339.0" layoutY="41.0" pickOnBounds="true" preserveRatio="true" />
+       <ImageView fx:id="imageNand1" fitHeight="38.0" fitWidth="68.0" layoutX="339.0" layoutY="41.0" pickOnBounds="true" preserveRatio="true" />
+       <ImageView fx:id="imageNand2" fitHeight="38.0" fitWidth="68.0" layoutX="339.0" layoutY="41.0" pickOnBounds="true" preserveRatio="true" />
+       <ImageView fx:id="imageNand3" fitHeight="38.0" fitWidth="68.0" layoutX="339.0" layoutY="41.0" pickOnBounds="true" preserveRatio="true" />
+       <ImageView fx:id="imageNand4" fitHeight="38.0" fitWidth="68.0" layoutX="339.0" layoutY="41.0" pickOnBounds="true" preserveRatio="true" />
+       <ImageView fx:id="imageNand5" fitHeight="38.0" fitWidth="68.0" layoutX="339.0" layoutY="41.0" pickOnBounds="true" preserveRatio="true" />
+       <ImageView fx:id="imageNand6" fitHeight="38.0" fitWidth="68.0" layoutX="339.0" layoutY="41.0" pickOnBounds="true" preserveRatio="true" />
+       <ImageView fx:id="imageNand7" fitHeight="38.0" fitWidth="68.0" layoutX="339.0" layoutY="41.0" pickOnBounds="true" preserveRatio="true" />
+       <ImageView fx:id="imageNand8" fitHeight="38.0" fitWidth="68.0" layoutX="339.0" layoutY="41.0" pickOnBounds="true" preserveRatio="true" />
+       <ImageView fx:id="imageNand9" fitHeight="38.0" fitWidth="68.0" layoutX="339.0" layoutY="41.0" pickOnBounds="true" preserveRatio="true" />
+       <ImageView fx:id="imageNand10" fitHeight="38.0" fitWidth="68.0" layoutX="339.0" layoutY="41.0" pickOnBounds="true" preserveRatio="true" />
+
+      <ImageView fx:id="imageXor" fitHeight="38.0" fitWidth="68.0" layoutX="419.0" layoutY="41.0" pickOnBounds="true" preserveRatio="true" />
+       <ImageView fx:id="imageXor1" fitHeight="38.0" fitWidth="68.0" layoutX="419.0" layoutY="41.0" pickOnBounds="true" preserveRatio="true" />
+       <ImageView fx:id="imageXor2" fitHeight="38.0" fitWidth="68.0" layoutX="419.0" layoutY="41.0" pickOnBounds="true" preserveRatio="true" />
+       <ImageView fx:id="imageXor3" fitHeight="38.0" fitWidth="68.0" layoutX="419.0" layoutY="41.0" pickOnBounds="true" preserveRatio="true" />
+       <ImageView fx:id="imageXor4" fitHeight="38.0" fitWidth="68.0" layoutX="419.0" layoutY="41.0" pickOnBounds="true" preserveRatio="true" />
+       <ImageView fx:id="imageXor5" fitHeight="38.0" fitWidth="68.0" layoutX="419.0" layoutY="41.0" pickOnBounds="true" preserveRatio="true" />
+       <ImageView fx:id="imageXor6" fitHeight="38.0" fitWidth="68.0" layoutX="419.0" layoutY="41.0" pickOnBounds="true" preserveRatio="true" />
+       <ImageView fx:id="imageXor7" fitHeight="38.0" fitWidth="68.0" layoutX="419.0" layoutY="41.0" pickOnBounds="true" preserveRatio="true" />
+       <ImageView fx:id="imageXor8" fitHeight="38.0" fitWidth="68.0" layoutX="419.0" layoutY="41.0" pickOnBounds="true" preserveRatio="true" />
+       <ImageView fx:id="imageXor9" fitHeight="38.0" fitWidth="68.0" layoutX="419.0" layoutY="41.0" pickOnBounds="true" preserveRatio="true" />
+       <ImageView fx:id="imageXor10" fitHeight="38.0" fitWidth="68.0" layoutX="419.0" layoutY="41.0" pickOnBounds="true" preserveRatio="true" />
+
+      <ImageView fx:id="imageNor" fitHeight="38.0" fitWidth="68.0" layoutX="258.0" layoutY="41.0" pickOnBounds="true" preserveRatio="true" />
+       <ImageView fx:id="imageNor1" fitHeight="38.0" fitWidth="68.0" layoutX="258.0" layoutY="41.0" pickOnBounds="true" preserveRatio="true" />
+       <ImageView fx:id="imageNor2" fitHeight="38.0" fitWidth="68.0" layoutX="258.0" layoutY="41.0" pickOnBounds="true" preserveRatio="true" />
+       <ImageView fx:id="imageNor3" fitHeight="38.0" fitWidth="68.0" layoutX="258.0" layoutY="41.0" pickOnBounds="true" preserveRatio="true" />
+       <ImageView fx:id="imageNor4" fitHeight="38.0" fitWidth="68.0" layoutX="258.0" layoutY="41.0" pickOnBounds="true" preserveRatio="true" />
+       <ImageView fx:id="imageNor5" fitHeight="38.0" fitWidth="68.0" layoutX="258.0" layoutY="41.0" pickOnBounds="true" preserveRatio="true" />
+       <ImageView fx:id="imageNor6" fitHeight="38.0" fitWidth="68.0" layoutX="258.0" layoutY="41.0" pickOnBounds="true" preserveRatio="true" />
+       <ImageView fx:id="imageNor7" fitHeight="38.0" fitWidth="68.0" layoutX="258.0" layoutY="41.0" pickOnBounds="true" preserveRatio="true" />
+       <ImageView fx:id="imageNor8" fitHeight="38.0" fitWidth="68.0" layoutX="258.0" layoutY="41.0" pickOnBounds="true" preserveRatio="true" />
+       <ImageView fx:id="imageNor9" fitHeight="38.0" fitWidth="68.0" layoutX="258.0" layoutY="41.0" pickOnBounds="true" preserveRatio="true" />
+       <ImageView fx:id="imageNor10" fitHeight="38.0" fitWidth="68.0" layoutX="258.0" layoutY="41.0" pickOnBounds="true" preserveRatio="true" />
+
+      <ImageView fitHeight="38.0" fitWidth="68.0" layoutX="14.0" layoutY="41.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fx:id="imageNot" fitHeight="38.0" fitWidth="68.0" layoutX="497.0" layoutY="41.0" pickOnBounds="true" preserveRatio="true" />
+       <ImageView fx:id="imageNot1" fitHeight="38.0" fitWidth="68.0" layoutX="497.0" layoutY="41.0" pickOnBounds="true" preserveRatio="true" />
+       <ImageView fx:id="imageNot2" fitHeight="38.0" fitWidth="68.0" layoutX="497.0" layoutY="41.0" pickOnBounds="true" preserveRatio="true" />
+       <ImageView fx:id="imageNot3" fitHeight="38.0" fitWidth="68.0" layoutX="497.0" layoutY="41.0" pickOnBounds="true" preserveRatio="true" />
+       <ImageView fx:id="imageNot4" fitHeight="38.0" fitWidth="68.0" layoutX="497.0" layoutY="41.0" pickOnBounds="true" preserveRatio="true" />
+       <ImageView fx:id="imageNot5" fitHeight="38.0" fitWidth="68.0" layoutX="497.0" layoutY="41.0" pickOnBounds="true" preserveRatio="true" />
+       <ImageView fx:id="imageNot6" fitHeight="38.0" fitWidth="68.0" layoutX="497.0" layoutY="41.0" pickOnBounds="true" preserveRatio="true" />
+       <ImageView fx:id="imageNot7" fitHeight="38.0" fitWidth="68.0" layoutX="497.0" layoutY="41.0" pickOnBounds="true" preserveRatio="true" />
+       <ImageView fx:id="imageNot8" fitHeight="38.0" fitWidth="68.0" layoutX="497.0" layoutY="41.0" pickOnBounds="true" preserveRatio="true" />
+       <ImageView fx:id="imageNot9" fitHeight="38.0" fitWidth="68.0" layoutX="497.0" layoutY="41.0" pickOnBounds="true" preserveRatio="true" />
+       <ImageView fx:id="imageNot10" fitHeight="38.0" fitWidth="68.0" layoutX="497.0" layoutY="41.0" pickOnBounds="true" preserveRatio="true" />
+
+       <ImageView fx:id="imageXnor" fitHeight="38.0" fitWidth="68.0" layoutX="577.0" layoutY="41.0" pickOnBounds="true" preserveRatio="true" />
+       <ImageView fx:id="imageXnor1" fitHeight="38.0" fitWidth="68.0" layoutX="577.0" layoutY="41.0" pickOnBounds="true" preserveRatio="true" />
+       <ImageView fx:id="imageXnor2" fitHeight="38.0" fitWidth="68.0" layoutX="577.0" layoutY="41.0" pickOnBounds="true" preserveRatio="true" />
+       <ImageView fx:id="imageXnor3" fitHeight="38.0" fitWidth="68.0" layoutX="577.0" layoutY="41.0" pickOnBounds="true" preserveRatio="true" />
+       <ImageView fx:id="imageXnor4" fitHeight="38.0" fitWidth="68.0" layoutX="577.0" layoutY="41.0" pickOnBounds="true" preserveRatio="true" />
+       <ImageView fx:id="imageXnor5" fitHeight="38.0" fitWidth="68.0" layoutX="577.0" layoutY="41.0" pickOnBounds="true" preserveRatio="true" />
+       <ImageView fx:id="imageXnor6" fitHeight="38.0" fitWidth="68.0" layoutX="577.0" layoutY="41.0" pickOnBounds="true" preserveRatio="true" />
+       <ImageView fx:id="imageXnor7" fitHeight="38.0" fitWidth="68.0" layoutX="577.0" layoutY="41.0" pickOnBounds="true" preserveRatio="true" />
+       <ImageView fx:id="imageXnor8" fitHeight="38.0" fitWidth="68.0" layoutX="577.0" layoutY="41.0" pickOnBounds="true" preserveRatio="true" />
+       <ImageView fx:id="imageXnor9" fitHeight="38.0" fitWidth="68.0" layoutX="577.0" layoutY="41.0" pickOnBounds="true" preserveRatio="true" />
+       <ImageView fx:id="imageXnor10" fitHeight="38.0" fitWidth="68.0" layoutX="577.0" layoutY="41.0" pickOnBounds="true" preserveRatio="true" />
+
+      <ImageView fx:id="imageWires" fitHeight="38.0" fitWidth="68.0" layoutX="653.0" layoutY="41.0" pickOnBounds="true" preserveRatio="true" />
+      <Button fx:id="ButtonOn" layoutX="14.0" layoutY="37.0" mnemonicParsing="false" onAction="#ActionOn" opacity="0.39" prefHeight="46.0" prefWidth="68.0" text="ON">
+         <tooltip>
+            <Tooltip text="ON/OFF" />
+         </tooltip></Button>
+      <Button fx:id="buttonAnd" layoutX="97.0" layoutY="37.0" mnemonicParsing="false" onAction="#ActionAnd" opacity="0.37" prefHeight="46.0" prefWidth="68.0">
+         <tooltip>
+            <Tooltip text="AND " />
+         </tooltip></Button>
+      <Button fx:id="buttonOr" layoutX="180.0" layoutY="37.0" mnemonicParsing="false" onAction="#ActionOr" opacity="0.34" prefHeight="46.0" prefWidth="68.0">
+         <tooltip>
+            <Tooltip text="OR" />
+         </tooltip></Button>
+      <Button fx:id="buttonXor" layoutX="419.0" layoutY="37.0" mnemonicParsing="false" onAction="#ActionXor" opacity="0.38" prefHeight="46.0" prefWidth="68.0">
+         <tooltip>
+            <Tooltip text="XOR" />
+         </tooltip></Button>
+      <Button fx:id="buttonNand" layoutX="339.0" layoutY="37.0" mnemonicParsing="false" onAction="#ActionNand" opacity="0.34" prefHeight="46.0" prefWidth="68.0">
+         <tooltip>
+            <Tooltip text="NAND" />
+         </tooltip></Button>
+      <Button fx:id="buttonNor" layoutX="258.0" layoutY="37.0" mnemonicParsing="false" onAction="#ActionNor" opacity="0.35" prefHeight="46.0" prefWidth="68.0">
+         <tooltip>
+            <Tooltip text="NOR" />
+         </tooltip></Button>
+      <Button fx:id="buttonNot" layoutX="497.0" layoutY="37.0" mnemonicParsing="false" onAction="#ActionNot" opacity="0.33" prefHeight="46.0" prefWidth="68.0">
+         <tooltip>
+            <Tooltip text="NOT" />
+         </tooltip></Button>
+      <Button fx:id="buttonXnor" layoutX="577.0" layoutY="37.0" mnemonicParsing="false" onAction="#ActionXnor" opacity="0.33" prefHeight="46.0" prefWidth="68.0">
+         <tooltip>
+            <Tooltip text="XNOR" />
+         </tooltip></Button>
+      <Button fx:id="buttonWires" layoutX="653.0" layoutY="37.0" mnemonicParsing="false" onAction="#ActionWires" opacity="0.37" prefHeight="46.0" prefWidth="68.0">
+         <tooltip>
+            <Tooltip text="WIRES" />
+         </tooltip></Button>
+      <RadioButton fx:id="inputA" layoutX="21.0" layoutY="129.0" mnemonicParsing="false" onAction="#ActionInputA" text="A" />
+      <RadioButton fx:id="inputB" layoutX="21.0" layoutY="181.0" mnemonicParsing="false" onAction="#ActionInputB" text="B" />
+      <RadioButton fx:id="inputC" layoutX="21.0" layoutY="237.0" mnemonicParsing="false" onAction="#ActionInputC" text="C" />
+      <RadioButton fx:id="inputD" layoutX="21.0" layoutY="298.0" mnemonicParsing="false" onAction="#ActionInputD" text="D" />
+      <RadioButton fx:id="inputE" layoutX="21.0" layoutY="369.0" mnemonicParsing="false" onAction="#ActionInputE" text="E" />
+      <RadioButton fx:id="inputF" layoutX="22.0" layoutY="431.0" mnemonicParsing="false" onAction="#ActionInputF" text="F" />
+      <TextField fx:id="TextInputA" layoutX="58.0" layoutY="126.0" prefHeight="24.0" prefWidth="24.0" />
+      <Circle fx:id="inputCircleA" fill="ORANGE" layoutX="88.0" layoutY="139.0" radius="6.0" stroke="BLACK" strokeType="INSIDE" />
+      <Circle fx:id="inputCircleB" fill="ORANGE" layoutX="88.0" layoutY="190.0" radius="6.0" stroke="BLACK" strokeType="INSIDE" />
+      <Circle fx:id="inputCircleC" fill="ORANGE" layoutX="88.0" layoutY="247.0" radius="6.0" stroke="BLACK" strokeType="INSIDE" />
+      <Circle fx:id="inputCircleD" fill="ORANGE" layoutX="88.0" layoutY="308.0" radius="6.0" stroke="BLACK" strokeType="INSIDE" />
+      <Circle fx:id="inputCircleE" fill="ORANGE" layoutX="88.0" layoutY="379.0" radius="6.0" stroke="BLACK" strokeType="INSIDE" />
+      <Circle fx:id="inputCircleF" fill="ORANGE" layoutX="88.0" layoutY="441.0" radius="6.0" stroke="BLACK" strokeType="INSIDE" />
+      <Circle fx:id="output1" fill="#b1b9a7" layoutX="705.0" layoutY="168.0" radius="9.0" stroke="BLACK" strokeType="INSIDE" />
+      <Circle fx:id="output2" fill="#b1b9a7" layoutX="705.0" layoutY="233.0" radius="9.0" stroke="BLACK" strokeType="INSIDE" />
+      <Circle fx:id="output3" fill="#b1b9a7" layoutX="705.0" layoutY="307.0" radius="9.0" stroke="BLACK" strokeType="INSIDE" />
+      <Circle fx:id="output4" fill="#b1b9a7" layoutX="705.0" layoutY="384.0" radius="9.0" stroke="BLACK" strokeType="INSIDE" />
+      <Label layoutX="704.0" layoutY="119.0" text="Output">
+         <font>
+            <Font name="System Bold" size="10.0" />
+         </font>
+      </Label>
+      <Label layoutX="14.0" layoutY="109.0" text="Input">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <TextField fx:id="TextOutput1" layoutX="716.0" layoutY="156.0" prefHeight="25.0" prefWidth="24.0" />
+      <TextField fx:id="TextOutput2" layoutX="716.0" layoutY="221.0" prefHeight="25.0" prefWidth="24.0" />
+      <TextField fx:id="TextOutput3" layoutX="716.0" layoutY="295.0" prefHeight="25.0" prefWidth="24.0" />
+      <TextField fx:id="TextOutput4" layoutX="716.0" layoutY="372.0" prefHeight="25.0" prefWidth="24.0" />
+      <TextField fx:id="TextInputB" layoutX="58.0" layoutY="177.0" prefHeight="24.0" prefWidth="24.0" />
+      <TextField fx:id="TextInputC" layoutX="58.0" layoutY="234.0" prefHeight="24.0" prefWidth="24.0" />
+      <TextField fx:id="TextInputD" layoutX="58.0" layoutY="295.0" prefHeight="24.0" prefWidth="24.0" />
+      <TextField fx:id="TextInputE" layoutX="58.0" layoutY="366.0" prefHeight="24.0" prefWidth="24.0" />
+      <TextField fx:id="TextInputF" layoutX="58.0" layoutY="428.0" prefHeight="24.0" prefWidth="24.0" />
+      <Button fx:id="buttonCheck" layoutX="645.0" layoutY="115.0" mnemonicParsing="false" onAction="#ActionCheck" text="CHECK">
+         <font>
+            <Font name="System Bold" size="11.0" />
+         </font>
+         <tooltip>
+            <Tooltip text="Check Your Output" />
+         </tooltip>
+      </Button>
+   </children>
+</AnchorPane>

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="470.0" prefWidth="757.0" xmlns="http://javafx.com/javafx/8.0.40" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.TableController">
+   <children>
+      <Label layoutX="227.0" layoutY="27.0" prefHeight="51.0" prefWidth="240.0" text="TRUTH TABLE" textFill="#8275d0">
+         <font>
+            <Font name="System Bold" size="35.0" />
+         </font>
+      </Label>
+      <Button layoutX="49.0" layoutY="436.0" mnemonicParsing="false" onAction="#ActionBack" text="Back" />
+      <MenuBar layoutX="-5.0" layoutY="2.0" prefHeight="25.0" prefWidth="767.0">
+        <menus>
+          <Menu mnemonicParsing="false" text="File">
+            <items>
+              <MenuItem mnemonicParsing="false" onAction="#ActionBack" text="Go Back to Start" />
+                  <MenuItem mnemonicParsing="false" onAction="#ActionClose" text="Close" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Edit">
+            <items>
+              <MenuItem mnemonicParsing="false" text="Delete" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Help">
+            <items>
+              <MenuItem mnemonicParsing="false" text="About" />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+      <TextField fx:id="Function" layoutX="49.0" layoutY="261.0" onAction="#FunctionAction" prefHeight="25.0" prefWidth="240.0" />
+      <MenuButton layoutX="49.0" layoutY="99.0" mnemonicParsing="false" text="Operators">
+        <items>
+          <MenuItem fx:id="And" mnemonicParsing="false" onAction="#ActionAnd" text="AND" />
+          <MenuItem fx:id="Or" mnemonicParsing="false" onAction="#ActionOr" text="OR" />
+            <MenuItem fx:id="Nor" mnemonicParsing="false" onAction="#ActionNor" text="NOR" />
+            <MenuItem fx:id="Nand" mnemonicParsing="false" onAction="#ActionNand" text="NAND" />
+            <MenuItem fx:id="Xor" mnemonicParsing="false" onAction="#ActionXor" text="XOR" />
+            <MenuItem fx:id="Xnor" mnemonicParsing="false" onAction="#ActionXnor" text="XNOR" />
+            <MenuItem fx:id="Not" mnemonicParsing="false" onAction="#ActionNot" text="NOT" />
+        </items>
+      </MenuButton>
+      <MenuButton layoutX="216.0" layoutY="99.0" mnemonicParsing="false" text="Input">
+        <items>
+          <MenuItem fx:id="A" mnemonicParsing="false" onAction="#ActionA" text="A" />
+          <MenuItem fx:id="B" mnemonicParsing="false" onAction="#ActionB" text="B" />
+            <MenuItem fx:id="C" mnemonicParsing="false" onAction="#ActionC" text="C" />
+            <MenuItem fx:id="D" mnemonicParsing="false" onAction="#ActionD" text="D" />
+        </items>
+      </MenuButton>
+      <MenuButton layoutX="347.0" layoutY="99.0" mnemonicParsing="false" text="Braces">
+        <items>
+          <MenuItem fx:id="firstBrace" mnemonicParsing="false" onAction="#ActionFirst" text="(" />
+          <MenuItem fx:id="closeFirstBrace" mnemonicParsing="false" onAction="#ActionCloseBrace" text=")" />
+        </items>
+      </MenuButton>
+   </children>
+</AnchorPane>
